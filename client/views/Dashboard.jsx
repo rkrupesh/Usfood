@@ -38,10 +38,10 @@ const data = [
 
 var arrayData = [
   {
-    project_description : 'Workday:                                                                                                                                                                                    1. Implement new Workday core HCM platform including recruiting, compensation, payroll, talent mgmt., absence mgmt. and time tracking 2. 50 – 75 consultants on project 3. Timeline:  in progress, initial roll out expected Q3 2018',
+    project_description : 'INES:                                                                                                                                                                                    1. Implement new INES core HCM platform including recruiting, compensation, payroll, talent mgmt., absence mgmt. and time tracking 2. 50 – 75 consultants on project 3. Timeline:  in progress, initial roll out expected Q4 2018',
     technology_inventory : 'SAP',
-    start_date :'Q2 2016',
-    end_date : 'Q3 2018',
+    start_date :'Q3 2018',
+    end_date : 'Q3 2020',
     tool_inventory : 'Service Now',
     name : 'Senior Director',
     email : 'abc@wipro.com',
@@ -53,8 +53,8 @@ var arrayData = [
         core_flex : 'Core',
         number: '2',
         demand : 'Nil',
-        start : 'Q2 2018',
-        end : 'Q3 2019',
+        start : 'Q3 2018',
+        end : 'Q3 2020',
         priority : 'High',
       },
       {
@@ -63,8 +63,8 @@ var arrayData = [
         core_flex : 'Flex',
         demand : 'Nil',
         number: '5',
-        start : 'Q2 2018',
-        end : 'Q3 2019',
+        start : 'Q3 2018',
+        end : 'Q3 2020',
         priority : 'High',
       },
       {
@@ -73,18 +73,18 @@ var arrayData = [
         core_flex : 'Core',
         number: '5',
         demand : 'Nil',
-        start : 'Q2 2018',
-        end : 'Q3 2019',
+        start : 'Q3 2018',
+        end : 'Q3 2020',
         priority : 'High',
       }
     ]
   },
   {
-    project_description : 'Finance Transformation:                                                                                                                                                                                    1. Implementation of ERP system for financials 2. Timeline:  software evaluations underway; multi-year effort expected',
-    technology_inventory : '.Net',
-    start_date :'Q3 2017',
-    end_date : 'Q3 2018',
-    tool_inventory : 'PeopleSoft Finance, APPeopleSoft Finance, Asset ManagementPeopleSoft Finance, Project CostPeopleSoft Finance, AREnvision',
+    project_description : 'OVL:                                                                                                                                                                                    1. Implementation of OVL system for financials 2. Timeline:  software evaluations underway; multi-year effort expected',
+    technology_inventory : 'SAP',
+    start_date :'Q3 2019',
+    end_date : 'Q2 2022',
+    tool_inventory : 'Service Now',
     name : 'Director',
     email : 'def@wipro.com',
     phone : 'xxxxxxx',
@@ -95,8 +95,8 @@ var arrayData = [
         core_flex : 'Core',
         number: '2',
         demand : 'Nil',
-        start : 'Q2 2018',
-        end : 'Q3 2019',
+        start : 'Q3 2019',
+        end : 'Q2 2022',
         priority : 'High',
       },
       {
@@ -105,8 +105,8 @@ var arrayData = [
         core_flex : 'Flex',
         demand : 'Nil',
         number: '5',
-        start : 'Q2 2018',
-        end : 'Q3 2019',
+        start : 'Q3 2019',
+        end : 'Q2 2022',
         priority : 'High',
       },
       {
@@ -115,18 +115,18 @@ var arrayData = [
         core_flex : 'Core',
         number: '5',
         demand : 'Nil',
-        start : 'Q2 2018',
-        end : 'Q3 2019',
+        start : 'Q3 2019',
+        end : 'Q2 2022',
         priority : 'High',
       }
     ]
   },
   {
-    project_description : 'ChefStore ERP:                                                                                                                                                                                   1. Implement MS Dynamics AX 365 for Operations 2. Workstreams include Financial Management, Planning, Purchasing & Inventory, Warehouse Management and Retail 3. 25 – 30 consultants on project 4. Timeline:  Initial phase completed in Q1 2018; Additional work underway',
-    technology_inventory : 'Windows',
-    start_date :'Q1 2017',
-    end_date : 'Q3 2018',
-    tool_inventory : 'Dynamics 365',
+    project_description : 'FVL:                                                                                                                                                                                   1. Implement Service Now for Operations 2. Workstreams include Financial Management, Planning, Purchasing & Inventory, Warehouse Management and Retail 3. 25 – 30 consultants on project 4. Timeline:  Initial phase completed in Q1 2018; Additional work underway',
+    technology_inventory : 'SAP',
+    start_date :'Q1 2019',
+    end_date : 'Q3 2024',
+    tool_inventory : 'Service Now',
     name : 'Senior Manager',
     email : 'ghi@wipro.com',
     phone : 'xxxxxxx',
@@ -137,8 +137,8 @@ var arrayData = [
         core_flex : 'Core',
         number: '2',
         demand : 'Nil',
-        start : 'Q2 2018',
-        end : 'Q3 2019',
+        start : 'Q1 2019',
+        end : 'Q3 2024',
         priority : 'High',
       },
       {
@@ -147,8 +147,8 @@ var arrayData = [
         core_flex : 'Flex',
         demand : 'Nil',
         number: '5',
-        start : 'Q2 2018',
-        end : 'Q3 2019',
+        start : 'Q1 2019',
+        end : 'Q3 2024',
         priority : 'High',
       },
       {
@@ -157,8 +157,8 @@ var arrayData = [
         core_flex : 'Core',
         number: '5',
         demand : 'Nil',
-        start : 'Q2 2018',
-        end : 'Q3 2019',
+        start : 'Q1 2019',
+        end : 'Q3 2024',
         priority : 'High',
       }
     ]
@@ -228,7 +228,7 @@ export default class Dashboard extends React.Component {
            <ExpansionPanel expanded={this.state.expanded === 'panel1'} onChange={this.handleChange.bind(this,'panel1')} style={{width:'80%'}}>
               <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
               <Grid container spacing={24}>
-                <Grid item xs={2}><Typography>WRKD23432</Typography></Grid>
+                <Grid item xs={2}><Typography>INES23432</Typography></Grid>
                 <Grid item xs={2}><Typography>INES</Typography></Grid>
                 <Grid item xs={1}><Typography>12</Typography></Grid>
                 <Grid item xs={1}><Typography>8</Typography></Grid>
@@ -279,7 +279,7 @@ export default class Dashboard extends React.Component {
            <ExpansionPanel expanded={this.state.expanded === 'panel2'} onChange={this.handleChange.bind(this,'panel2')} style={{width:'80%'}}>
               <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
               <Grid container spacing={24}>
-                <Grid item xs={2}><Typography>FNCT57547</Typography></Grid>
+                <Grid item xs={2}><Typography>OVL57547</Typography></Grid>
                 <Grid item xs={2}><Typography style={{fontSize:'13px'}}>OVL</Typography></Grid>
                 <Grid item xs={1}><Typography>12</Typography></Grid>
                 <Grid item xs={1}><Typography>8</Typography></Grid>
@@ -329,7 +329,7 @@ export default class Dashboard extends React.Component {
            <ExpansionPanel expanded={this.state.expanded === 'panel3'} onChange={this.handleChange.bind(this,'panel3')} style={{width:'80%'}}>
               <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
               <Grid container spacing={24}>
-                  <Grid item xs={2}><Typography>CSTR45032</Typography></Grid>
+                  <Grid item xs={2}><Typography>FVL45032</Typography></Grid>
                   <Grid item xs={2}><Typography>FVL</Typography></Grid>
                   <Grid item xs={1}><Typography>12</Typography></Grid>
                   <Grid item xs={1}><Typography>8</Typography></Grid>
